@@ -4,19 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"/>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
     <title>Git Search</title>
   </head>
-  <body>
 
-    <script type="module" src="./src/scripts/index.js"></script>
+  <body>
+    <main class="main__container">
+      <section class="intro__container">
+        <div class="intro__container-content">
+          <h1>Git Search</h1>
+          <p> Encontre e se conecte com profissionais de forma rápida e fácil</p>
+        </div>
+      </section>
+      <form class="user-search__container">
+        <div class="user-search__container-content">
+          <h3>Procurar por um usuário</h3>
+          <p>Usuário github</p>
+          <input type="text" id="usernameInput" placeholder="Digite um usuário do github aqui...">
+          <button type="button" id="searchButton">Ver perfil do github</button>
+        </div>
+      </form>
+    </main>
+    <script type="module" src="src/scripts/index.js"></script>
   </body>
 </html>

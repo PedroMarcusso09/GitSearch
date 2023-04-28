@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"/>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/error.css">
     <title>Git Search - User Not Found</title>
-  </head>
-  <body>
+</head>
 
+<body>
+    <main class="main-container">
+        <div class="content-container">
+            <div class="error__container">
+                <h1>Ooops!</h1>
+                <p>Não encontramos o usuário que você procurou, <span>vamos tentar novamente.</span></p>
+                <button id="newSearch">Nova Busca</button>
+            </div>
+        </div>
+        <div class="squares-wrapper">
+            <div class="squares-container">
+                <div class="square square-1">
+                    <div class="image-wrapper">
+                        <img src="../../src/assets/Rectangle 113.svg" alt="Triângulo1" class="square-image">
+                    </div>
+                </div>
+                <div class="square square-2">
+                    <img src="../../src/assets/Rectangle 112.svg" alt="Triângulo2" class="square-image">
+                    <img src="../../src/assets/ (1).svg" alt="Segunda imagem" class="image">
+                </div>
+            </div>
+        </div>
+    </main>
     <script type="module" src="../scripts/error.js"></script>
-  </body>
+</body>
 </html>
