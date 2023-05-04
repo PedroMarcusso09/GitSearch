@@ -10,3 +10,7 @@
   --color-alert: #c22554;
   --font-primary: "Inter", sans-serif;
 }
+
+h1, p, h3, button {
+  font-family: var(--font-primary);
+}
